@@ -1,5 +1,7 @@
 # Quantum_Espresso_Tutorial
-# Quantum_Espresso is a Open-Source software for electronic-structure calculations based on density-functional theory (DFT), plane waves, and pseudopotentials. 
-# This tutorial will guide you through a step by step complete sequence of optimizations and processes required to obtain the desired electronic properties. 
 
+Quantum ESPRESSO is an open-source software package for electronic-structure calculations. It utilizes density-functional theory (DFT), plane waves, and pseudopotentials.
 
+This repository provides various resources to aid you in using Quantum ESPRESSO. These resources include tutorials, links to hands-on sessions from external websites, bash scripts, and research papers.
+
+The provided tutorials offer step-by-step guidance through the entire optimization and calculation process, helping you obtain the desired electronic properties of materials.
