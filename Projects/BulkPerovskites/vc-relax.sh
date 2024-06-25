@@ -1,3 +1,32 @@
+#!/bin/sh
+####################################################
+# This is a sample script to run vc-relax total-energy
+# calculations on a unit cell of ABX3 perovskites using five 
+# different values for the input parameter 
+# 'lattice constant' .
+#
+# You should copy this file and modify it as 
+# appropriate for the tutorial.
+####################################################
+# Notes:
+#
+# 1. You can loop over a variable by using the 
+#    'for...do...done' construction. As an example, 
+#    this code loops over three different values
+#    of ecut (5, 10, 15), designated by a
+#    variable called CUTOFF.
+# 2. Variables can be referred to within the script 
+#    by typing the variable name preceded by the '$' 
+#    sign. So whenever $CUTOFF appears in the 
+#    script, it will be replaced by its current 
+#    value.
+#
+####################################################
+# Important initial variables for the code
+# (change these as necessary)
+####################################################
+
+
 cat>./test.in<<EOF
 5.5
 5.6
