@@ -78,9 +78,15 @@ Cl            0.5000000000        0.5000000000        0.0000000000
 K_POINTS AUTOMATIC
 4 4 4 0 0 0
 EOF
-
-
 mpirun -np 32 pw.x < vc-relax.$a.in > ./vc-relax.$a.out
-
-
 done
+
+## Analysis scripts
+# To obtain the global minima of the structure, we need to compare the lattice parameters and their corresponding total energy given in the vc-relax output files.
+# The output lattice constant and energy values can be extracted and plotted using below script.
+
+for a in $(cat ./test.in); do
+grep "!    total energy              =" ./vc-relax.$a.out  
+
+grep "End final coordinates" ./vc-relax.$a.out  > ./1.dat
+
